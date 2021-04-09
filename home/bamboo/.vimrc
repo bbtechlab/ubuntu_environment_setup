@@ -24,8 +24,8 @@ set ts=4 "number of spaces a tab is converted to
 set sw=4 "number of spaces to use for each indent
 set expandtab " expand all tabs
 set nu " enable line numbering
-"set mouse=hv " only allow mouse interactivity during :help
-set mouse=a
+set mouse=a " only allow mouse interactivity during :help
+set mouse&
 set hidden " allow buffers to remain modified without writing
 set bs=2 " allow backspacing over everything in insert mode
 set ai " always set autoindenting on
@@ -258,3 +258,11 @@ let Tlist_Ctags_Cmd='/usr/local/bin/ctags'
 :hi LineNr ctermfg=DarkGrey
 ":nnoremap <Leader>c :set cursorline! cursorcolumn!<CR>
 filetype plugin on
+
+" YouCompleteMe
+execute pathogen#infect('~/workspace/.vim/bundle/{}')
+filetype plugin indent on
+syntax on
+let g:ycm_global_ycm_extra_conf = "~/workspace/.vim/.ycm_extra_conf.py"
+:set backspace=indent,eol,start
+" ~YouCompleteMe
