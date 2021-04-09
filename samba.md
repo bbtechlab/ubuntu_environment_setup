@@ -1,4 +1,4 @@
-#Setup SAMBA server
+# Setup SAMBA server
 ```
 $ sudo apt-get install samba
 $ sudo vim /etc/samba/smb.conf
