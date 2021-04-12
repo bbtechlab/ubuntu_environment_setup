@@ -38,7 +38,7 @@ Copyright (C) 2019 Free Software Foundation, Inc.
 This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. 
 ```
-## Upgrade Vim 8.3 or higher
+## Upgrade Vim 8.2 or higher
 ```
 $ sudo apt-get remove --purge vim vim-runtime vim-gnome vim-tiny vim-common vim-gui-common
 $ sudo rm -rf /usr/local/share/vim && sudo rm -rf /usr/bin/vim
@@ -106,6 +106,16 @@ Huge version without GUI.  Features included (+) or not (-):
   fall-back for $VIM: "/usr/local/share/vim"
 Compilation: gcc -c -I. -Iproto -DHAVE_CONFIG_H -g -O2 -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1 
 Linking: gcc -L/usr/local/lib -Wl,--as-needed -o vim -lm -ltinfo -ldl -L/usr/lib/python3.6/config-3.6m-x86_64-linux-gnu -lpython3.6m -lpthread -ldl -lutil -lm 
+```
+## Upgrade CMake 3.18 or higher
+```
+$ wget https://cmake.org/files/v3.18/cmake-3.18.0.tar.gz
+$ tar -xfz cmake-3.18.0.tar.gz && cd cmake-3.18.0
+$ ./bootstrap
+$ make
+$ sudo make install
+$ cd 
+$ source .bashrc
 ```
 # Download & Install YouCompleteMe for VIM
 ## Download & Install YouCompleteMe
