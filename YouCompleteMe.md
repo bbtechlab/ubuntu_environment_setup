@@ -20,12 +20,9 @@ $ curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 ## Install python3.6 && gcc-8
 ```
 $ sudo add-apt-repository ppa:ubuntu-toolchain-r/test -y && \
-sudo add-apt-repository ppa:deadsnakes/ppa && sudo apt-get update -y
-$ sudo apt-get upgrade -y && \
-sudo apt-get dist-upgrade -y && \
-sudo apt-get install build-essential software-properties-common -y && \
-sudo add-apt-repository ppa:ubuntu-toolchain-r/test -y && \
+sudo add-apt-repository ppa:deadsnakes/ppa && sudo apt-get update -y \
 sudo apt-get update -y && \
+sudo apt-get install build-essential software-properties-common -y && \
 sudo apt-get install gcc-9 g++-9 -y && \
 sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-9 60 --slave /usr/bin/g++ g++ /usr/bin/g++-9 && \
 sudo update-alternatives --config gcc \
