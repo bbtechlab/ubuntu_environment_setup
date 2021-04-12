@@ -140,3 +140,8 @@ let g:ycm_global_ycm_extra_conf = "~/workspace/.vim/.ycm_extra_conf.py"
 # Show the result
 ![YouCompleteMe](YouCompleteMe.png)
 
+# References,
+* https://gist.github.com/j-jith/f25fbcb826dff37a28bd190b584afd04
+* https://xuechendi.github.io/2019/11/11/VIM-CPP-IDE-2019-111-11-VIM_CPP_IDE
+
+
