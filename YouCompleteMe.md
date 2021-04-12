@@ -105,6 +105,7 @@ Linking: gcc -L/usr/local/lib -Wl,--as-needed -o vim -lm -ltinfo -ldl -L/usr/lib
 ```
 ## Upgrade CMake 3.18 or higher
 ```
+$ sudo apt-get install libssl-dev
 $ wget https://cmake.org/files/v3.18/cmake-3.18.0.tar.gz
 $ tar -xfz cmake-3.18.0.tar.gz && cd cmake-3.18.0
 $ ./bootstrap
